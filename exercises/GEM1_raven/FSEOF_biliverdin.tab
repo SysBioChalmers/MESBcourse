@@ -1,0 +1,24 @@
+Slope	rowID	Enzyme ID	Enzyme Name	Subsystems	Direction	Gr Rule
+2.9067	226	ACONTa	aconitase (half-reaction A, Citrate hydro-lyase)	Citric Acid Cycle	1	ECD_00117 or ECD_01253
+2.9067	227	ACONTb	aconitase (half-reaction B, Isocitrate hydro-lyase)	Citric Acid Cycle	1	ECD_00117 or ECD_01253
+7.6638	249	ADK1	adenylate kinase	Nucleotide Salvage Pathway	1	ECD_00425
+0.99984	559	CPPPGO	coproporphyrinogen oxidase (O2 required)	Cofactor and Prosthetic Group Biosynthesis	0	ECD_02336
+2.9067	573	CS	citrate synthase	Citric Acid Cycle	0	ECD_00680
+0.99984	1264	FCLT	Ferrochelatase	Cofactor and Prosthetic Group Biosynthesis	0	ECD_00426
+7.9974	1364	G1SAT	glutamate-1-semialdehyde aminotransferase	Cofactor and Prosthetic Group Biosynthesis	1	ECD_00153
+1.7694	1480	GLUDy	glutamate dehydrogenase (NADP)	Glutamate Metabolism	-1	ECD_01730
+7.9974	1486	GLUTRR	glutamyl-tRNA reductase	Cofactor and Prosthetic Group Biosynthesis	0	ECD_01185
+7.9974	1487	GLUTRS	Glutamyl-tRNA synthetase	Cofactor and Prosthetic Group Biosynthesis	0	ECD_02306
+0.99968	1637	HMBS	hydroxymethylbilane synthase	Cofactor and Prosthetic Group Biosynthesis	0	ECD_03680
+2.9067	1673	ICDHyr	isocitrate dehydrogenase (NADP)	Citric Acid Cycle	1	ECD_01134
+3.9987	2311	PPBNGS	porphobilinogen synthase	Cofactor and Prosthetic Group Biosynthesis	0	ECD_00319
+6.0098	2312	PPC	phosphoenolpyruvate carboxylase	Anaplerotic Reactions	0	ECD_03841
+5.4686	2318	PPKr	polyphosphate kinase	Oxidative Phosphorylation	-1	ECD_02393
+0.99984	2325	PPPGO3	protoporphyrinogen oxidase (anaerobic)	Cofactor and Prosthetic Group Biosynthesis	0	ECD_03741
+0.99968	2683	UPP3S	uroporphyrinogen-III synthase	Cofactor and Prosthetic Group Biosynthesis	0	ECD_03679
+0.99984	2684	UPPDC1	uroporphyrinogen decarboxylase (uroporphyrinogen III)	Cofactor and Prosthetic Group Biosynthesis	0	ECD_03874
+1	2733	HEMEOX			0	
+1	2734	EX_biliverdin			0	
+1	2735	COtpp			1	
+1	2736	COtex			1	
+1	2737	EX_co			1	
