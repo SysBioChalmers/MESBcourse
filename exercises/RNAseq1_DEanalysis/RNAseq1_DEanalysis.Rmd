@@ -21,14 +21,14 @@ knitr::include_graphics('data/figs/Yeast_mating_scheme.jpg')
 
 ## R session setup
 
-Data is here is classified as either pheromone-affected or pheromone-unaffected. The count data files are located in the **data/gene_counts/** subdirectory in the **'Day4'** directory.
+Data is here is classified as either pheromone-affected or pheromone-unaffected. The count data files are located in the **data/gene_counts/** subdirectory in the **'RNAseq1_DEanalysis'** directory.
 
 The gene_counts_glucose.txt dataset corresponds to glucose as the carbon source, whereas the gene_counts_ethanol.txt dataset used ethanol. This was to show the effect of pheromone on cells undergoing two different types of metabolism: fermentation (with glucose) or respiration (with ethanol). Each dataset includes 6 pheromone-affected samples, and several pheromone-unaffected samples (24 for glucose, 15 for ethanol).
 
-1. Start R and use setwd() (or Session > Set Working Directory > Choose Directory… from the top menu bar) to change the working directory to the Day4/ directory, which should contain a subdirectory named data/.
+1. Start R and use setwd() (or Session > Set Working Directory > Choose Directory… from the top menu bar) to change the working directory to the RNAseq1_DEanalysis/ directory, which should contain a subdirectory named data/.
 ```{r setup, include=FALSE,warning=FALSE,echo=TRUE,message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-# setwd("~/Documents/Course/MESB/Day4")
+# setwd("~/Documents/Course/MESB/RNAseq1_DEanalysis")
 # setwd('~/Documents/MESB')
 # setwd('~/Work/MESB')
 

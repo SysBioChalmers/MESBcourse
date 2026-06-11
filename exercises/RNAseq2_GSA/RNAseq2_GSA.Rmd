@@ -21,12 +21,12 @@ knitr::include_graphics('data/figs/GSA_scheme-v2.jpg')
 
 ## R environment setup
 
-The data needed for this exercise are the results from the previous differential expression analysis exercise, using the gene counts from glucose conditions (saved as **DE_results_glucose.txt** in the **data/DE_results/** subdirectory in the **Day5** directory).
+The data needed for this exercise are the results from the previous differential expression analysis exercise, using the gene counts from glucose conditions (saved as **DE_results_glucose.txt** in the **data/DE_results/** subdirectory in the **RNAseq2_GSA** directory).
 
-1. Start R and use setwd() (or Session > Set Working Directory > Choose Directory… from the top menu bar) to change the working directory to the Day5/ directory, which should contain a subdirectory named data/.
+1. Start R and use setwd() (or Session > Set Working Directory > Choose Directory… from the top menu bar) to change the working directory to the RNAseq2_GSA/ directory, which should contain a subdirectory named data/.
 ```{r setup, include=FALSE,warning=FALSE,echo=TRUE,message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-# setwd("~/Documents/Course/MESB/Day5")
+# setwd("~/Documents/Course/MESB/RNAseq2_GSA")
 
 # Confirm we're in the right directory and look at its content:
 getwd()
