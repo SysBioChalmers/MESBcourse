@@ -1,13 +1,13 @@
 ---
 title: "Gene Set Analysis and Interpretation"
 output:
-  pdf_document:
-    toc: true
   html_document:
     theme: united
     fig_caption: true
     toc: true
     toc_float: true
+  pdf_document:
+    toc: true
 ---
 
 
@@ -373,9 +373,16 @@ View(GSAsummaryTable(gsaRes))
 >So, yes, these results are in line with what was seen for the GSA fgsea.
 
 
-Another way to visualize these results instead of the network plot is using a heatmap. Piano’s GSAheatmap function is an easy way to display the results as a clustered heatmap: (Note: You may need to increase the height of your “Plots” panel by dragging the height of the bottom right panel in your RSutdio upwards, otherwise you may encounter the error “Error in plot.new() : figure margins too large”).
+Another way to visualize these results instead of the network plot is using a heatmap. Piano’s GSAheatmap function is an easy way to display the results as a clustered heatmap. This heatmap draws one row per gene set, so it needs a tall plotting area; in a small plot panel R will otherwise throw `Error in plot.new() : figure margins too large`. The chunk below takes care of this for you: when the document is knitted it requests a large enough figure, and when run interactively it opens a separate, appropriately sized plotting window.
 
-```{r}
+```{r GSAheatmap, fig.width=8, fig.height=10}
+# GSAheatmap draws one row per gene set, so it needs a tall plotting region.
+# When run interactively, open a separate window large enough to avoid the
+# error "figure margins too large". When knitting, the chunk's fig.width /
+# fig.height options already provide enough space, so the new window is skipped.
+if (!isTRUE(getOption("knitr.in.progress"))) {
+  dev.new(width = 8, height = 10, noRStudioGD = TRUE)
+}
 GSAheatmap(gsaRes, adjusted=T, ncharLabel=Inf, cellnote='rank', cex=1.0)
 ```
 
