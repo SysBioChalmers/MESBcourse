@@ -310,7 +310,7 @@ For the first example, we will use the GSEA (Gene Set Enrichment Analysis) metho
 
 19. Run the GSA using piano and plot the results:
 ```{r GSA}
-gsaRes <- runGSA(-log10(pvals)*sign(logfc), geneSetStat="fgsea", gsc=gscGO, gsSizeLim=c(10, Inf), nPerm = 10000)
+gsaRes <- runGSA(-log10(pvals)*sign(logfc), geneSetStat="gsea", gsc=gscGO, gsSizeLim=c(10, Inf), nPerm = 1000)
 ```
 
 ```{r}
