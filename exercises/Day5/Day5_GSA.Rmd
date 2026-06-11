@@ -35,6 +35,16 @@ dir()
 
 2. Load the R packages that will be used in this exercise::
 ```{r library,warning=FALSE,echo=TRUE,message=FALSE}
+# First time only: install the packages used in this exercise. Once installed,
+# you don't need to repeat these commands (you can leave them commented out with
+# the #-sign in front).
+# if (!require("BiocManager", quietly = TRUE))
+#   install.packages("BiocManager", dependencies = TRUE)
+# # CRAN packages:
+# install.packages(c("knitr", "pheatmap", "shiny", "plotly"))
+# # Bioconductor packages:
+# BiocManager::install(c("piano", "org.Sc.sgd.db", "edgeR"), update = FALSE, ask = FALSE)
+
 # After installing the software the first time, load the R-packages that we need. This you need to do every time you start a new R session.
 library(knitr)
 library(piano)
@@ -43,12 +53,7 @@ library(org.Sc.sgd.db)
 library(edgeR)
 library(shiny)
 library(plotly)
-#If you are unable to load the package, try to install it using the following commands:
-# if (!require("BiocManager", quietly = TRUE))                      
-# install.packages("BiocManager", dependencies = TRUE)
-# BiocManager::install('PACKAGE_NAME_HERE')
-# #Or alternatively:
-# install.packages('PACKAGE_NAME_HERE')
+#If you are unable to load a package, try to understand the error message. You can install a missing package using the matching command above.
 ```
 
 If something fails, try to understand the error message and fix it. If you get stuck, ask for help :)
