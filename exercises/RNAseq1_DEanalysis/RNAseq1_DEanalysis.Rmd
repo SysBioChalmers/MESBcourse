@@ -1,13 +1,13 @@
 ---
 title: "Differential Expression Analysis"
 output:
-  pdf_document:
-    toc: true
   html_document:
     theme: united
     fig_caption: true
     toc: true
     toc_float: true
+  pdf_document:
+    toc: true
 ---
 
 
