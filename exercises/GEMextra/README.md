@@ -10,7 +10,7 @@ your own organism.
 
 | Path | What it is |
 |------|------------|
-| [`gemExtra.ipynb`](gemExtra.ipynb) | **Python** translation using [`raven-python`](https://github.com/SysBioChalmers/raven-python). Open in Colab with the badge in the notebook. |
+| [`gemExtra.ipynb`](gemExtra.ipynb) | **Python** translation using [`raven-toolbox`](https://github.com/SysBioChalmers/raven-toolbox). Open in Colab with the badge in the notebook. |
 | [`code/reconstructionProtocol.m`](code/reconstructionProtocol.m) | The original **MATLAB / RAVEN** script. Run it from the `code/` folder. |
 | `code/lipidMetabolism/`, `code/curation/` | Organism-specific helper functions the script needs (`addLipidReactions`, `addSLIMEreactions`, `scaleLipids`, `cleanupModel`). |
 | `code/newCommit.m`, `code/newRelease.m` | RAVEN/GitHub bookkeeping helpers (the "save" steps; need a git repo + `model/` folder). |
@@ -41,7 +41,7 @@ run time, so it works standalone on Colab without the `data/` folder here.
 
 ## Notes on the Python version
 
-- `raven-python` ports RAVEN's reconstruction functions (`run_blast`,
+- `raven-toolbox` ports RAVEN's reconstruction functions (`run_blast`,
   `get_model_from_homology`, `connect_blocked_reactions`) onto cobrapy
   `Model` objects. It is alpha and installed from GitHub.
 - The homology step needs **BLAST+** (the notebook installs `ncbi-blast+` and
